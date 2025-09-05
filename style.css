@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ccee66;
+    color: white;
+    padding: 1rem 2rem;
+    height: 100vh;
+    overflow: hidden;
+    font-family: "Noto Sans", sans-serif;
+}
+
+body::before {
+    content: '';
+    background: #2c2c2c;
+    width: 100vw;
+    height: 130vh;
+    position: absolute;
+    top: 0;
+    left: -650px;
+    transform: rotate(-70deg);
+}
+
+body::after {
+    content: 'TÊNIS';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: rgb(0, 0, 0);
+    font-size: 15rem;
+    font-weight: bold;
+    transform: translate(-50%, -50%);
+    opacity: 0.6;
+}
+
+.logo {
+    margin-top: 1rem;
+    position: relative;
+    width: 5rem;
+    z-index: 2;
+}
+
+h4 {
+    font-size: 1.875rem;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+p {
+    font-size: 0.8rem;
+    margin-bottom: 2.5rem;
+}
+
+.botao-carrinho {
+    background: #a3be52;
+    padding: 0.625rem 1.25rem;
+    border-radius: 20px;
+    font-size: 1rem;
+    color: black;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.botao-carrinho:hover {
+    opacity: 0.7;
+}
+
+.imagem-tenis {
+    width: 65vw;
+    transform: rotate(-25deg);
+    filter: drop-shadow(1.875rem 2.8125rem 2.5rem #161616);
+    transition: 1s;
+}
+
+.troca-efeito {
+    opacity: 0;
+    transform: rotate(-25deg) translateY(-30px);
+}
+
+.caixa-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70vh;
+    position: relative;
+    z-index: 1;
+    gap: 20px;
+}
+
+.caixa-texto {
+    max-width: 26.04vw;
+}
+
+.caixa-botoes {
+    z-index: 2;
+    position: relative;
+    display: flex;
+    gap: 1.25rem;
+}
+
+.botoes {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    transition: border 0.5s ease;
+
+}
+
+.botoes:hover {
+    transform: scale(1.1);
+    border: 2px solid rgb(255, 0, 0);
+}
+
+.botoes:active {
+    opacity: 0.6;
+}
+
+.verde {
+    background: #ccee66;
+}
+
+.rosa {
+    background: #ff9eb5;
+}
+
+.azul {
+    background: #58cced;
+}
